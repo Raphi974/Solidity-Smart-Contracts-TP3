@@ -1,6 +1,6 @@
 # Réalisation d'une notarisation de documents ( Blockchain Notarisation Service )
-PARASSOURAMIN Sivadjy
-MONDIA Raphaël 
+# PARASSOURAMIN Sivadjy
+# ONDIA Raphaël 
 
 
 Lister les acteurs :
