@@ -2,6 +2,7 @@ pragma solidity ^0.4.18;
 
 
 // Proof of Existence contract
+
 contract ProofOfExistence {
   // state
   bytes32[] private proofs;
@@ -13,15 +14,15 @@ contract ProofOfExistence {
 // calculate and store the proof for a document
   // *transactional function*
   function notarize(string document) {
-    bytes32 proof = proofFor(document);
+    bytes32 proof = proofFor(document);  
     storeProof(proof);
   }
-// helper function to get a document's sha256
+// helper function to get a document's sha256  (documentHash)
   // *read-only function*
   function proofFor(string document) constant returns (bytes32) {
     return sha256(document);
   }
-// check if a document has been notarized
+// check if a document has been notarized 
   // *read-only function*
   function checkDocument(string document) constant returns (bool) {
     bytes32 proof = proofFor(document);
